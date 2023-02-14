@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Gmail" parallel="tests">
+
+	<test name="AddToCartAndRemoveFromCart-Functionality-Test"
+		enabled="false">
+		<groups>
+			<run>
+				<include name="Smoke"></include>
+			</run>
+		</groups>
+		<classes>
+			<class
+				name="com.automation.testng.TC_003_AddToCartAndRemoveFromCart"></class>
+		</classes>
+	</test>
+
+
+	<test name="AddToCart-Funtionality-Test" enabled="true">
+		<parameter name="browser" value="edge"></parameter>
+		<classes>
+			<class name="com.automation.testng.TC_001__AddToCart"></class>
+		</classes>
+	</test>
+
+	<test name="RemoveFromCart-Functionality-Test" enabled="true">
+		<classes>
+			<class name="com.automation.testng.TC_002_RemoveFromCart"></class>
+		</classes>
+	</test>
+
+
+
+
+
+</suite> 
+
+
